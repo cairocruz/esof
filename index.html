@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página do projeto FestPlus">
+    <title>FestPlus - Documentação do Projeto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .document-section {
+            display: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FestPlus</h1>
+        <p>Documentação do Projeto</p>
+    </header>
+
+    <nav>
+        <a href="#visao" onclick="showSection('visao')">Documento de Visão</a>
+        <a href="#requisitos" onclick="showSection('requisitos')">Documento de Requisitos de Software</a>
+        <a href="#casosuso" onclick="showSection('casosuso')">Especificação de Casos de Uso</a>
+        <a href="#metodologia" onclick="showSection('metodologia')">Plano Metodológico</a>
+        <a href="#rastreabilidade" onclick="showSection('rastreabilidade')">Matriz de Rastreabilidade</a>
+    </nav>
+
+    <main>
+        <!-- Seção do Documento de Visão -->
+        <section id="visao" class="document-section">
+            <h2>Documento de Visão</h2>
+            <p>Aqui você pode acessar o documento de visão do projeto FestPlus.</p>
+            <button onclick="window.location.href='documentos/DocumentoDeVisao.pdf'">Abrir Documento de Visão</button>
+        </section>
+
+        <!-- Seção do Documento de Requisitos de Software -->
+        <section id="requisitos" class="document-section">
+            <h2>Documento de Requisitos de Software</h2>
+            <p>Aqui você pode acessar o documento de requisitos do projeto FestPlus.</p>
+            <button onclick="window.location.href='documentos/DocumentoDeRequisitosDeSoftware.pdf'">Abrir Documento de Requisitos de Software</button>
+        </section>
+
+        <!-- Seção da Especificação de Casos de Uso -->
+        <section id="casosuso" class="document-section">
+            <h2>Especificação de Casos de Uso</h2>
+            <p>Aqui você pode acessar a especificação de casos de uso do projeto FestPlus.</p>
+            <button onclick="window.location.href='documentos/EspecificacaoDeCasosDeUso.pdf'">Abrir Especificação de Casos de Uso</button>
+        </section>
+
+        <!-- Seção do Plano Metodológico -->
+        <section id="metodologia" class="document-section">
+            <h2>Plano Metodológico</h2>
+            <p>Aqui você pode acessar o plano metodológico do projeto FestPlus.</p>
+            <button onclick="window.location.href='documentos/DocumentoDeVisao'">Abrir Plano Metodológico</button>
+        </section>
+
+        <!-- Seção da Matriz de Rastreabilidade -->
+        <section id="rastreabilidade" class="document-section">
+            <h2>Matriz de Rastreabilidade</h2>
+            <p>Aqui você pode acessar a matriz de rastreabilidade do projeto FestPlus.</p>
+            <button onclick="window.location.href='documentos/MatrizDeRastreabilidade.pdf'">Abrir Matriz de Rastreabilidade</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FestPlus. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.document-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
